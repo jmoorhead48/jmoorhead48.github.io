@@ -1,0 +1,12 @@
+/*
+  OR --> true if either a=1 or b=1 or both=1,
+          false otherwise
+*/
+CHIP Or P{
+  IN a, b;
+  OUT out;
+  PARTS:
+  Nand(a=a, b=a, out=out1);
+  Nand(a=out1, b=out2, out=out2);
+  Nand(a=out1, b=out2, out=out)
+}

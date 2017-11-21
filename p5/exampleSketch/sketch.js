@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1080, 400);
+  createCanvas(800, 400);
 }
 function draw() {
   if (mouseIsPressed) {
